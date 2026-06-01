@@ -1,2 +1,232 @@
 # bulkstreamvalue.com
 B2B sourcing &amp; Distribution Company website 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulkstream Value LTD | B2B Sourcing & Distribution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      background: #F8F9FA;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 18px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { 
+      font-size: 26px; 
+      font-weight: 700; 
+      color: #1a3c7d; 
+    }
+    .nav-links a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      height: 100vh;
+      min-height: 650px;
+      background: linear-gradient(rgba(26,60,125,0.85), rgba(26,60,125,0.85)), 
+                  url('https://images.unsplash.com/photo-1586528116311-ad8dd3c83137?w=1600');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-content h1 {
+      font-size: 3.8rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .hero-content p {
+      font-size: 1.35rem;
+      max-width: 700px;
+      margin: 0 auto 35px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #1a3c7d;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #0f2a5e;
+      transform: translateY(-4px);
+    }
+
+    section { padding: 100px 0; }
+    h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 60px;
+      color: #1a3c7d;
+    }
+
+    .about { background: white; }
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 45px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .categories {
+      background: white;
+    }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    footer {
+      background: #1a3c7d;
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-content">
+      <div class="logo">Bulkstream Value</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Bulkstream Value LTD</h1>
+      <p>Smart B2B Sourcing • Warehousing • Distribution of Fast-Moving Goods</p>
+      <a href="#contact" class="btn">Partner With Us</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Bulkstream Value LTD is a trusted B2B sourcing and distribution company. 
+        We buy high-demand FMCG, packaging supplies, and electronics accessories 
+        directly from manufacturers in bulk, store them in our warehouses, and 
+        resell in smaller, flexible quantities to retailers and e-commerce businesses.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Core Services</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Sourcing</h3>
+          <p>We source premium quality products directly from trusted manufacturers at the best wholesale prices.</p>
+        </div>
+        <div class="card">
+          <h3>Storage & Warehousing</h3>
+          <p>Secure, climate-controlled warehousing with efficient inventory management.</p>
+        </div>
+        <div class="card">
+          <h3>Distribution</h3>
+          <p>Reliable distribution of goods in flexible quantities to retailers and online stores across regions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2>Product Categories</h2>
+      <div class="categories-grid">
+        <div class="card">
+          <h3>FMCG</h3>
+          <p>Food & Beverages, Household essentials, Personal care products</p>
+        </div>
+        <div class="card">
+          <h3>Packaging Supplies</h3>
+          <p>Boxes, bags, tapes, wraps, labels, and custom packaging solutions</p>
+        </div>
+        <div class="card">
+          <h3>Electronics Accessories</h3>
+          <p>Phone accessories, chargers, cables, earphones, power banks, and more</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background: #1a3c7d; color: white;">
+    <div class="container" style="text-align: center;">
+      <h2 style="color: white;">Let's Grow Together</h2>
+      <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 40px;">
+        Looking for reliable bulk supply? We are ready to support your business growth.
+      </p>
+      <p><strong>Email:</strong> info@bulkstreamvalue.com</p>
+      <p><strong>Phone:</strong> +1 (214) XXX-XXXX</p>
+      <br><br>
+      <a href="mailto:info@bulkstreamvalue.com" class="btn" style="background: white; color: #1a3c7d;">Send Inquiry</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bulkstream Value LTD. All Rights Reserved.</p>
+    <p style="margin-top: 10px; opacity: 0.8;">B2B Sourcing & Distribution • Dallas, Texas</p>
+  </footer>
+
+</body>
+</html>
